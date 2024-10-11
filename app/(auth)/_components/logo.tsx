@@ -1,12 +1,6 @@
 import React from 'react'
-import { Poppins } from "next/font/google"
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
-
-const font = Poppins({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"]
-})
 
 const Logo = () => {
   return (
@@ -19,7 +13,7 @@ const Logo = () => {
           width="80"
         />
       </div>
-      <div className={cn("flex flex-col items-center", font.className)}>
+      <div className={cn("flex flex-col items-center")}>
         <p className={"text-xl text-textLightPrimary font-semibold"}>
           StreamApp
         </p>

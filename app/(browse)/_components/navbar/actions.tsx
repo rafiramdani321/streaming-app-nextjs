@@ -24,8 +24,8 @@ const Actions = async () => {
         <div className="flex items-center gap-x-4">
           <Button
             size='sm'
-            variant='ghost'
-            className='text-muted-foreground hover:text-textPrimary'
+            variant='primary'
+            className='text-muted-foreground'
             asChild
           >
             <Link href={`/u/${user.username}`}>
