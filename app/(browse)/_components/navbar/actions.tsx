@@ -14,7 +14,7 @@ const Actions = async () => {
         <SignInButton>
           <Button
             size="sm"
-            variant="primary"
+            variant="bgYellow"
           >
             Login
           </Button>
@@ -24,8 +24,8 @@ const Actions = async () => {
         <div className="flex items-center gap-x-4">
           <Button
             size='sm'
-            variant='primary'
-            className='text-muted-foreground'
+            variant='bgYellow'
+            // className='text-muted-foreground'
             asChild
           >
             <Link href={`/u/${user.username}`}>

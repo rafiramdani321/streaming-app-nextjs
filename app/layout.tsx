@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner"
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -28,6 +29,7 @@ export default function RootLayout({
           className={`${poppins.variable} antialiased`}
         >
           <ThemeProvider attribute="class" forcedTheme="dark" storageKey="streamApp-theme">
+            <Toaster theme="light" position="bottom-center" />
             {children}
           </ThemeProvider>
         </body>

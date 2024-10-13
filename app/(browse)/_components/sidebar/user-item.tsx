@@ -31,7 +31,7 @@ export const UserItem = ({
       className={cn(
         "w-full h-12",
         collapsed ? "justify-center" : "justify-start",
-        isActive && "bg-yellow-500" // testing
+        isActive && "bg-accent" // testing
       )}
     >
       <Link href={href}>
