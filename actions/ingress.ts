@@ -13,7 +13,6 @@ import { TrackSource } from "livekit-server-sdk/dist/proto/livekit_models"
 
 import { db } from "@/lib/db";
 import { getSelf } from "@/lib/auth-service";
-import { Import } from "lucide-react";
 import { revalidatePath } from "next/cache";
 
 const roomService = new RoomServiceClient(
