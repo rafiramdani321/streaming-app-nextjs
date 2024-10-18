@@ -19,7 +19,11 @@ export const getFollewedUser = async () => {
       include: {
         following: {
           include: {
-            stream: true
+            stream: {
+              select: {
+                isLive: true
+              }
+            }
           },
         }
       }
