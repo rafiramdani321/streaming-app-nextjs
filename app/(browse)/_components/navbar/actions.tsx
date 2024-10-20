@@ -25,7 +25,6 @@ const Actions = async () => {
           <Button
             size='sm'
             variant='bgYellow'
-            // className='text-muted-foreground'
             asChild
           >
             <Link href={`/u/${user.username}`}>
